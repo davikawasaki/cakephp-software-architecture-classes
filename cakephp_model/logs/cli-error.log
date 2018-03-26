@@ -1,0 +1,7 @@
+2018-03-22 14:07:49 Error: [RuntimeException] Unknown command `cake ser`. Run `cake --help` to get the list of valid commands. in /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Console/CommandRunner.php on line 177
+Stack Trace:
+#0 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Console/CommandRunner.php(137): Cake\Console\CommandRunner->getShell(Object(Cake\Console\ConsoleIo), Object(Cake\Console\CommandCollection), 'ser')
+#1 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+

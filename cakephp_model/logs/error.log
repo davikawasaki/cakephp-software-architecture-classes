@@ -1,0 +1,234 @@
+2018-03-16 17:47:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-03-16 17:54:51 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-03-16 17:54:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-03-16 17:56:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-03-16 17:56:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-03-16 17:56:40 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-03-22 14:07:58 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-03-22 14:26:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-03-22 14:26:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Pages could not be found.
+Exception Attributes: array (
+  'class' => 'Pages',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2018-03-22 14:29:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-03-22 14:29:31 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Index could not be found.
+Exception Attributes: array (
+  'class' => 'Index',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /index
+Stack Trace:
+#0 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2018-03-22 14:29:43 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-03-22 14:29:43 Error: Fatal Error (1): Class 'AppController' not found in [/home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/src/Controller/UserController.php, line 2]
+Request URL: /user
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 104
+[main] - [internal], line ??
+
+
+
+2018-03-22 14:29:43 Error: [Cake\Error\FatalErrorException] Class 'AppController' not found in /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/src/Controller/UserController.php on line 2
+Request URL: /user
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(104): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'AppContr...', '/home/kawasaki/...', 2)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-03-22 14:31:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-03-22 14:31:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Pages could not be found.
+Exception Attributes: array (
+  'class' => 'Pages',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2018-03-22 14:31:43 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-03-22 14:32:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-03-22 14:32:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Index could not be found.
+Exception Attributes: array (
+  'class' => 'Index',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /index
+Stack Trace:
+#0 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2018-03-22 14:32:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-03-22 14:32:58 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-03-22 14:33:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-03-22 14:33:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-03-22 14:33:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-03-22 14:34:04 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-03-22 14:35:10 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-03-22 14:35:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Exception Attributes: array (
+  'class' => 'Users',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /users
+Stack Trace:
+#0 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2018-03-22 14:35:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-03-22 14:35:15 Error: Fatal Error (1): Class 'AppController' not found in [/home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/src/Controller/UserController.php, line 2]
+Request URL: /user
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 104
+[main] - [internal], line ??
+
+
+
+2018-03-22 14:35:15 Error: [Cake\Error\FatalErrorException] Class 'AppController' not found in /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/src/Controller/UserController.php on line 2
+Request URL: /user
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(104): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'AppContr...', '/home/kawasaki/...', 2)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-03-22 14:36:04 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-03-22 14:36:04 Error: Fatal Error (1): Class 'User\Controller\AppController' not found in [/home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/src/Controller/UserController.php, line 5]
+Request URL: /user
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 104
+[main] - [internal], line ??
+
+
+
+2018-03-22 14:36:04 Error: [Cake\Error\FatalErrorException] Class 'User\Controller\AppController' not found in /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/src/Controller/UserController.php on line 5
+Request URL: /user
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(104): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'User\\Con...', '/home/kawasaki/...', 5)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-03-22 14:36:33 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-03-22 14:36:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-03-22 14:36:48 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages/home.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/home.ctp',
+)
+Request URL: /
+Stack Trace:
+#0 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/View/View.php(768): Cake\View\View->_getViewFileName('Pages/home')
+#1 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Controller/Controller.php(623): Cake\View\View->render('home', NULL)
+#2 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/src/Controller/PagesController.php(61): Cake\Controller\Controller->render('home')
+#3 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\PagesController->display('home')
+#4 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#5 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#6 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/kawasaki/Git/utfpr/cakephp-software-architecture-classes/webroot/index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-03-22 14:36:54 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-03-22 14:36:59 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
