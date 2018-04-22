@@ -1,0 +1,19 @@
+<h3>Formulário de Cadastro dos Produtos</h3>
+<a href="<?php echo $this->url('home', array('action' => 'index')); ?>">Voltar</a>
+<hr>
+
+<form method="post">
+    Informe o nome do produto...:
+    <br/>
+    <input type="text" name="nome" value="">
+    <br><br>
+    Informe o estoque do produto...:
+    <br>
+    <input type="number" name="estoque" value="0">
+    <br><br>
+    Informe o preço do produto...:
+    <br>
+    <input type="text" name="preco" value="">
+    <br><br>
+    <input type="submit" value="Novo Produto">
+</form>

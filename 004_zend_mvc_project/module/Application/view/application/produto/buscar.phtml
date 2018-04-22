@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<h3>Lista dos Produtos</h3>
+<a href="<?php echo $this->url('home', array('action' => 'index')); ?>">Voltar</a>
+<hr>
+
+    <table style="width: 100%;">
+        <tr>
+            <th>NOME</th>
+            <th>ESTOQUE</th>
+            <th>PREÇO</th>
+        </tr>
+        <?php foreach($this->listaProdutos as $prod) { ?>
+            <tr>
+                <td><?php echo $prod->getNome(); ?></td>
+                <td><?php echo $prod->getEstoque(); ?></td>
+                <td><?php echo $prod->getPreco(); ?></td>
+            </tr>
+        <?php } ?>
+    </table>
