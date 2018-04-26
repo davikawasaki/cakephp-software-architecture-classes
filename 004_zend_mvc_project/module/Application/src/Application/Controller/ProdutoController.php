@@ -22,6 +22,7 @@ class ProdutoController extends AbstractActionController
 
     public function indexAction()
     {
+        $msg = null;
         if($this->getRequest()->isPost())
         {
           $product = new Produto();
@@ -29,13 +30,84 @@ class ProdutoController extends AbstractActionController
           $product->setEstoque($this->getRequest()->getPost('estoque'));
           $product->setPreco($this->getRequest()->getPost('preco'));
           
-          $this->getObjectManager()->persist($product);
-          if($this->getObjectManager()->flush())
-            $this->view->resp = "Produto " . $nome . " enviado com sucesso!";
-          else
-            $this->view->resp = "Produto " . $nome . " não gravado!";
+          try {
+            $this->getObjectManager()->persist($product);
+            $this->getObjectManager()->flush();
+            $msg = "Produto enviado com sucesso!";
+          } catch(\Exception $e) {
+            // var_dump($e->getMessage());
+            $msg = "Produto não gravado!";
+          }
         }
-        return new ViewModel();
+        return new ViewModel(array(
+            'msg' => $msg
+        ));
+    }
+
+    public function editAction()
+    {
+        $msg = null;
+        
+        $product_id = $this->params()->fromRoute('id');
+        $product = null;
+
+        if($this->getRequest()->isGet())
+        {
+          try {
+            $product = $this->getObjectManager()->getRepository('\Application\Entity\Produto')->find($product_id);
+          } catch(\Exception $e) {
+            // var_dump($e->getMessage());
+            $msg = "Produto " . $nome . " não existente!";
+          }
+        }
+
+        if($this->getRequest()->isPost())
+        {
+            try {
+              $product = $this->getObjectManager()->getRepository('\Application\Entity\Produto')->find($product_id);
+              $product->setNome($this->getRequest()->getPost('nome'));
+              $product->setEstoque($this->getRequest()->getPost('estoque'));
+              $product->setPreco($this->getRequest()->getPost('preco'));
+              try {
+                $this->getObjectManager()->persist($product);
+                $this->getObjectManager()->flush();
+                $msg = "Produto atualizado com sucesso!";
+              } catch(\Exception $e) {
+                // var_dump($e->getMessage());
+                $msg = "Produto não atualizado!";
+              }
+          } catch(\Exception $e) {
+            // var_dump($e->getMessage());
+            $msg = "Produto não existente!";
+          }
+
+        }
+        return new ViewModel(array(
+            'msg' => $msg,
+            'product' => $product
+        ));
+    }
+
+    public function removeAction()
+    {
+        $msg = null;
+        if($this->getRequest()->isGet())
+        {
+          $product_id = $this->params()->fromRoute('id');
+          
+          try {
+            $product = $this->getObjectManager()->getRepository('\Application\Entity\Produto')->find($product_id);
+            $this->getObjectManager()->remove($product);
+            $this->getObjectManager()->flush();
+            $msg = "Produto removido com sucesso!";
+          } catch(\Exception $e) {
+            // var_dump($e->getMessage());
+            $msg = "Produto não removido!";
+          }
+        }
+        return new ViewModel(array(
+            'msg' => $msg
+        ));
     }
 
     public function buscarAction()

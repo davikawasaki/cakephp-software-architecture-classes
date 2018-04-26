@@ -52,14 +52,42 @@ return array(
                     )
                 ),
             ),
-            'produto' => array(
+            'produtoNovo' => array(
                 'type'    => 'Literal',
                 'options' => array(
                     'route'    => '/produto',
                     'defaults' => array(
                         '__NAMESPACE__' => 'Application\Controller',
                         'controller'    => 'Produto',
-                        'action'        => 'index',
+                        'action'        => 'index'
+                    ),
+                ),
+            ),
+            'produtoEditar' => array(
+                'type'    => 'segment',
+                'options' => array(
+                    'route'    => '/produto/editar[/:id]',
+                    'constraints' => array(
+                        'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                    ),
+                    'defaults' => array(
+                        '__NAMESPACE__' => 'Application\Controller',
+                        'controller'    => 'Produto',
+                        'action'        => 'edit',
+                    ),
+                ),
+            ),
+            'produtoRemover' => array(
+                'type'    => 'segment',
+                'options' => array(
+                    'route'    => '/produto/remover[/:id]',
+                    'constraints' => array(
+                        'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                    ),
+                    'defaults' => array(
+                        '__NAMESPACE__' => 'Application\Controller',
+                        'controller'    => 'Produto',
+                        'action'        => 'remove'
                     ),
                 ),
             ),

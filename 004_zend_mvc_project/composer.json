@@ -13,5 +13,17 @@
         "doctrine/doctrine-orm-module": "0.*",
         "zendframework/zftool": "dev-master",
         "zendframework/zend-db": "^2.9"
+    },
+    "scripts": {
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "development-disable": "zf-development-mode disable",
+        "development-enable": "zf-development-mode enable",
+        "development-status": "zf-development-mode status",
+        "post-create-project-cmd": [
+            "@development-enable"
+        ],
+        "serve": "php -S 0.0.0.0:8282 -t public public/index.php",
+        "test": "phpunit"
     }
 }

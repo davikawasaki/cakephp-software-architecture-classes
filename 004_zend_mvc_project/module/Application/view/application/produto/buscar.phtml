@@ -8,12 +8,17 @@
             <th>NOME</th>
             <th>ESTOQUE</th>
             <th>PREÇO</th>
+            <th>AÇÕES</th>
         </tr>
         <?php foreach($this->listaProdutos as $prod) { ?>
             <tr>
                 <td><?php echo $prod->getNome(); ?></td>
                 <td><?php echo $prod->getEstoque(); ?></td>
                 <td><?php echo $prod->getPreco(); ?></td>
+                <td>
+                    <span><a href="<?php echo $this->url('produtoEditar', ['action' => 'remove', 'id' => $prod->getId()]); ?>">Editar</a></span>
+                    <span><a href="<?php echo $this->url('produtoRemover', ['action' => 'remove', 'id' => $prod->getId()]); ?>">Remover</a></span>
+                </td>
             </tr>
         <?php } ?>
     </table>

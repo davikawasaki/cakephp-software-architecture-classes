@@ -1,0 +1,23 @@
+<h3>Formulário de Cadastro dos Produtos</h3>
+<a href="<?php echo $this->url('produtoBuscar', ['action' => 'buscar']); ?>">Voltar</a>
+<hr>
+
+<?php if($this->msg) { ?>
+<p style="color: red; font-weight: bold;"><?php echo $this->msg; ?></p>
+<?php } ?>
+
+<form method="post">
+    Informe o nome do produto...:
+    <br/>
+    <input type="text" name="nome" value="<?php if($this->product) { echo $this->product->getNome(); } else { echo ''; } ?>">
+    <br><br>
+    Informe o estoque do produto...:
+    <br>
+    <input type="number" name="estoque" value="<?php if($this->product) { echo $this->product->getEstoque(); } else { echo 0; } ?>">
+    <br><br>
+    Informe o preço do produto...:
+    <br>
+    <input type="text" name="preco" value="<?php if($this->product) { echo $this->product->getPreco(); } else { echo ''; } ?>">
+    <br><br>
+    <input type="submit" value="Editar Produto">
+</form>

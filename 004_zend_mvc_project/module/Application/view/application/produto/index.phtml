@@ -2,6 +2,10 @@
 <a href="<?php echo $this->url('home', array('action' => 'index')); ?>">Voltar</a>
 <hr>
 
+<?php if($this->msg) { ?>
+<p style="color: red; font-weight: bold;"><?php echo $this->msg; ?></p>
+<?php } ?>
+
 <form method="post">
     Informe o nome do produto...:
     <br/>
