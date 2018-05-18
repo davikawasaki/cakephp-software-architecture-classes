@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<NotaFiscalFile>
+    <NotaFiscalHeader>
+        <Identification>
+            <IdSeries>ABC</IdSeries>
+            <IdNumber>1234567890</IdNumber>
+        </Identification>
+        <Company>
+            <CGC>123</CGC>
+            <StateSub>1234567890</StateSub>
+            <Name>Company LTDA</Name>
+            <PhoneNumber>+414401234567</PhoneNumber>
+            <Address>Street Company 123</Address>
+            <State>Georgia</State>
+        </Company>
+        <Buyer>
+            <!-- <Company>
+                <CGC>123</CGC>
+                <StateSub>1234567890</StateSub>
+                <Name>Company LTDA</Name>
+                <PhoneNumber>+414401234567</PhoneNumber>
+                <Address>Street Company 123</Address>
+                <State>Georgia</State>
+            </Company> -->
+            <Person>
+                <CPF>00000000000</CPF>
+                <Name>Dominic</Name>
+                <PhoneNumber>+414401234567</PhoneNumber>
+                <Address>Street Company 123</Address>
+            </Person>
+        </Buyer>
+        <EmissionDate>31/12/1980</EmissionDate>
+    </NotaFiscalHeader>
+    <NotaFiscalBody>
+        <Invoice>
+            <InvNumber>123</InvNumber>
+            <ProductId>1</ProductId>
+            <ProductDesc>About a product</ProductDesc>
+            <ProductQty>12</ProductQty>
+            <UnitPrice>100</UnitPrice>
+            <TotalPrice>1200</TotalPrice>
+        </Invoice>
+        <Invoice>
+            <InvNumber>124</InvNumber>
+            <ProductId>2</ProductId>
+            <ProductDesc>About another product</ProductDesc>
+            <ProductQty>12</ProductQty>
+            <UnitPrice>100</UnitPrice>
+            <TotalPrice>1200</TotalPrice>
+        </Invoice>
+    </NotaFiscalBody>
+    <NotaFiscalFooter>
+        <Taxes>34</Taxes>
+        <TotalPrice>2434</TotalPrice>
+    </NotaFiscalFooter>
+</NotaFiscalFile>
